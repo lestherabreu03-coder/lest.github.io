@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scoreboard">
+
+        <h1>🏀 BASKETBALL SCOREBOARD</h1>
+
+        <div class="teams">
+
+            <!-- TEAM A -->
+            <div class="team team-a">
+
+                <input
+                    type="text"
+                    class="team-name"
+                    id="nameA"
+                    value="TEAM A"
+                    maxlength="20"
+                >
+
+                <div class="score" id="scoreA">0</div>
+
+                <button class="add" onclick="changeScore('A', 1)">
+                    + ADD
+                </button>
+
+                <button class="minus" onclick="changeScore('A', -1)">
+                    − MINUS
+                </button>
+
+            </div>
+
+            <!-- TEAM B -->
+            <div class="team team-b">
+
+                <input
+                    type="text"
+                    class="team-name"
+                    id="nameB"
+                    value="TEAM B"
+                    maxlength="20"
+                >
+
+                <div class="score" id="scoreB">0</div>
+
+                <button class="add" onclick="changeScore('B', 1)">
+                    + ADD
+                </button>
+
+                <button class="minus" onclick="changeScore('B', -1)">
+                    - MINUS
+                </button>
+
+            </div>
+
+        </div>
+
+        <button class="reset" onclick="resetScores()">
+            RESET SCORES
+        </button>
+
+    </div>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
